@@ -1,0 +1,32 @@
+<script>
+    
+class Student{
+    
+    constructor(name,age,rollNo){
+            this.Sudetn_name = name;
+            this.Sudetn_age = age;
+            this.Sudetn_rollNo = rollNo;
+
+    }
+    javaCourse(){
+            console.log(this.Sudetn_name,"Enrole for java course")
+    }
+    pythonCourse(){
+        console.log("Enrole for java course")
+    }
+    getInfo(){
+        console.log("Studdetn name is ", this.Sudetn_name)
+        console.log("Studdetn age is ", this.Sudetn_age)
+        console.log("Studdetn rollno is ", this.Sudetn_rollNo)
+    }
+
+}
+
+s1 = new Student('pramod',23,234444444444444444444444444);
+console.log(s1.Sudetn_age)
+s2 = new Student('ravi',23,23000);
+s3 = new Student('pankaj',23,2345);
+s2.javaCourse();
+s1.getInfo();
+
+</script>

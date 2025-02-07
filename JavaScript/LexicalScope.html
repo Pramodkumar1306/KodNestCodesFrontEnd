@@ -1,0 +1,16 @@
+<script>
+    let g = 300;
+    function outer(){
+        let out = 100;
+        console.log("Accessing global varibale inside outer", g);
+        //console.log("Accessing global varibale inside outer", inner);
+        function inner() {
+            let inner = 200;
+            console.log("Accessing global varibale inside outer", g);
+            console.log("Accessing global varibale inside outer", out);
+        }
+        inner();
+    }
+    outer();
+
+</script>
